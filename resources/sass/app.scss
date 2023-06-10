@@ -1,0 +1,109 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+// Variables
+@import 'variables';
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+
+
+// Fonts
+@font-face {
+    font-family: "Poppins-Bold";
+    src: local("../fonts/Poppins-Bold.tff") format("tff");
+}
+// Variables
+@import "variables";
+
+// Bootstrap & datetimepicker & slimselect
+@import "~bootstrap/scss/bootstrap";
+@import "~jquery-datetimepicker/build/jquery.datetimepicker.min.css";
+
+// global styles begin
+body {
+    background-color: #ffffff;
+}
+.btn-mine {
+    background-color: #f48116;
+}
+.btn-mine:hover,
+.btn-mine:active {
+    background-color: #ffc42a;
+}
+.swal2-actions {
+    flex-direction: row-reverse;
+    justify-content: end;
+}
+.swal2-confirm.swal2-styled.btn-danger {
+    background-color: #e64942 !important;
+    color: #fff !important;
+    font-weight: 600 !important;
+}
+.swal2-cancel.swal2-styled {
+    background-color: #efefef !important;
+    color: #555 !important;
+    font-weight: 600 !important;
+}
+
+.active {
+    background: transparent !important;
+    color: rgba(255, 196, 42, 1) !important;
+}
+
+// global styles end
+
+// login styles begin
+.login-container {
+    height: 100vh;
+    .row {
+        height: 100vh;
+    }
+    .row .col-md-6:first-of-type,
+    .row .col-lg-8 {
+        background-color: #ffc42a;
+    }
+    .row .form h1 {
+        font-family: "Poppins-Bold";
+    }
+    .row .form #username,
+    .row .form #password {
+        background-position: 7px center;
+        background-repeat: no-repeat;
+        color: #f48116;
+    }
+    .row .form #username {
+        background-image: url("/images/user.svg");
+    }
+    .row .form #password {
+        background-image: url("/images/key.svg");
+    }
+}
+// login styles end
+
+// global dashboard styles begin
+.dashboard {
+    background-color: #f3f3f3;
+    #dashboardSearch {
+        background-image: url("/images/search.svg");
+        background-position: 7px center;
+        background-repeat: no-repeat;
+    }
+}
+
+// global dashboard styles end
+
+// datatable styles begin
+.current {
+    background-color: #f48116 !important;
+}
+// datatable styles end
+
+// pagination styles begin
+.pagination .page-item {
+    color: #555 !important;
+}
+.my-active .page-link {
+    background-color: #f48116 !important;
+    color: #ffffff !important;
+}
